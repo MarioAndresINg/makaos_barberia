@@ -5,14 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="MaKaos Barbería — Más que un corte, una experiencia. Servicios premium de barbería en Barrio Bello Horizonte. Reserva tu cita en línea." />
   <meta name="keywords" content="barbería, corte de cabello, barba, MaKaos, Bello Horizonte, barbería premium, reserva cita" />
+  <meta name="author" content="MaKaos Barbería" />
   <meta property="og:title" content="MaKaos Barbería — Más que un corte, una experiencia" />
   <meta property="og:description" content="Estilo, confianza y atención profesional en cada visita. Reserva tu cita ahora." />
+  <meta property="og:url" content="https://marioandresing.github.io/makaos_barberia/" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MaKaos Barbería" />
+  <meta property="og:image" content="https://marioandresing.github.io/makaos_barberia/img/makaos-preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="MaKaos Barbería - Más que un corte, una experiencia" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MaKaos Barbería — Más que un corte, una experiencia" />
+  <meta name="twitter:description" content="Estilo, confianza y atención profesional en cada visita. Reserva tu cita ahora." />
+  <meta name="twitter:image" content="servicio vip.jpeg" />
+  <meta name="theme-color" content="#111111" />
   <title>MaKaos Barbería | Más que un corte, una experiencia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero-img-frame {
+      overflow: hidden;
+    }
+
+    .hero-img-frame .hero-img {
+      transition: transform .6s cubic-bezier(.2,.8,.2,1), filter .6s ease;
+    }
+
+    .hero-img-frame:hover .hero-img {
+      transform: scale(1.08) rotate(1deg);
+      filter: brightness(1.08) saturate(1.12);
+    }
+
+    .hero-img-frame .img-gold-accent {
+      transition: transform .6s ease, opacity .6s ease;
+    }
+
+    .hero-img-frame:hover .img-gold-accent {
+      transform: translateX(10px) scaleY(1.15);
+      opacity: 1;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-img-frame .hero-img,
+      .hero-img-frame .img-gold-accent {
+        transition: none;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -30,6 +72,7 @@
       <ul class="nav-links" id="navLinks" role="list">
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#promociones">Promociones y novedades</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#ubicacion">Ubicación</a></li>
         <li><a href="https://calendar.app.google/jn2NZFRevcm345kQA" target="_blank" rel="noopener" class="nav-cta">Reservar</a></li>
@@ -101,6 +144,92 @@
       <span class="scroll-dot"></span>
     </a>
   </section>
+
+  <!-- ===== PROMOCIONES Y NOVEDADES ===== -->
+  <section class="offers section-pad" id="promociones" aria-label="Promociones y novedades">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">PROMOCIONES Y NOVEDADES</div>
+        <h2 class="section-title">Descubre lo <span class="gold-text">nuevo</span></h2>
+        <div class="gold-divider center"></div>
+      </div>
+      <div class="offers-carousel" data-carousel>
+        <div class="offers-track">
+          <article class="offer-slide offer-slide--featured">
+            <div class="offer-content">
+              <span class="offer-label">PROMOCIÓN DE LA SEMANA</span>
+              <h3>Corte + Barba+ Bebida</h3>
+              <p>Dale un cambio completo a tu estilo con un gran precio. <strong>$25.000 COP</strong>.</p>
+              <a href="https://calendar.app.google/jn2NZFRevcm345kQA" target="_blank" rel="noopener" class="btn btn-primary">Reservar ahora</a>
+            </div>
+            <div class="offer-number" aria-hidden="true">01</div>
+          </article>
+          <article class="offer-slide">
+            <div class="offer-content">
+              <span class="offer-label">NOVEDAD</span>
+              <h3>NUEVO EN MAKAOS 🔥</h3>
+              <p>Tenemos algo nuevo para ti.
+                Ahora puedes disfrutar de una cafeteria totalmente gratis y llevar tu experiencia MaKaos a otro nivel.</p>
+              <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+            </div>
+            <div class="offer-number" aria-hidden="true">02</div>
+          </article>
+          <article class="offer-slide">
+            <div class="offer-content">
+              <span class="offer-label">RESERVA EN LÍNEA</span>
+              <h3>Agenda sin esperar</h3>
+              <p>Selecciona tu horario y asegura tu cita en pocos segundos desde cualquier dispositivo.</p>
+              <a href="https://calendar.app.google/jn2NZFRevcm345kQA" target="_blank" rel="noopener" class="btn btn-primary">Agendar cita</a>
+            </div>
+            <div class="offer-number" aria-hidden="true">03</div>
+          </article>
+        </div>
+        <button class="offer-control offer-prev" type="button" aria-label="Promoción anterior">‹</button>
+        <button class="offer-control offer-next" type="button" aria-label="Siguiente promoción">›</button>
+        <div class="offer-dots" role="tablist" aria-label="Seleccionar promoción"></div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .offers { background: #f7f4ee; }
+    .offers-carousel { position: relative; overflow: hidden; max-width: 980px; margin: 2rem auto 0; border-radius: 3px; box-shadow: 0 18px 45px rgba(0,0,0,.14); }
+    .offers-track { display: flex; transition: transform .6s ease; }
+    .offer-slide { min-width: 100%; min-height: 270px; padding: 3.5rem 8rem 3.5rem 4rem; display: flex; align-items: center; justify-content: space-between; background: #202020; color: #fff; position: relative; }
+    .offer-slide--featured { background: linear-gradient(120deg, #171717, #33291d); }
+    .offer-content { max-width: 650px; position: relative; z-index: 1; }
+    .offer-label { color: #c9a45c; font: 600 .72rem/1 Inter,sans-serif; letter-spacing: .2em; }
+    .offer-slide h3 { font: 700 2.2rem/1.15 'Playfair Display',serif; margin: .7rem 0; }
+    .offer-slide p { color: #d4d0c9; line-height: 1.7; margin: 0 0 1.4rem; }
+    .offer-number { color: rgba(201,164,92,.18); font: 900 8rem/1 'Playfair Display',serif; }
+    .offer-control { position: absolute; top: 50%; transform: translateY(-50%); border: 1px solid rgba(201,164,92,.6); background: rgba(0,0,0,.35); color: #c9a45c; width: 42px; height: 42px; border-radius: 50%; font-size: 2rem; cursor: pointer; z-index: 2; }
+    .offer-prev { left: 1rem; } .offer-next { right: 1rem; }
+    .offer-dots { position: absolute; bottom: 1rem; left: 0; right: 0; text-align: center; }
+    .offer-dot { width: 9px; height: 9px; margin: 0 5px; border: 0; border-radius: 50%; background: #777; cursor: pointer; }
+    .offer-dot.active { background: #c9a45c; transform: scale(1.25); }
+    @media (max-width: 600px) { .offer-slide { padding: 2.8rem 3.5rem; min-height: 310px; } .offer-slide h3 { font-size: 1.8rem; } .offer-number { display: none; } }
+  </style>
+  <script>
+    (() => {
+      const carousel = document.querySelector('[data-carousel]');
+      if (!carousel) return;
+      const track = carousel.querySelector('.offers-track');
+      const slides = carousel.querySelectorAll('.offer-slide');
+      const dots = carousel.querySelector('.offer-dots');
+      let current = 0, timer;
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'offer-dot' + (i === 0 ? ' active' : '');
+        dot.type = 'button'; dot.setAttribute('aria-label', `Ver promoción ${i + 1}`);
+        dot.addEventListener('click', () => show(i)); dots.appendChild(dot);
+      });
+      function show(index) { current = (index + slides.length) % slides.length; track.style.transform = `translateX(-${current * 100}%)`; dots.querySelectorAll('.offer-dot').forEach((d, i) => d.classList.toggle('active', i === current)); }
+      function restart() { clearInterval(timer); timer = setInterval(() => show(current + 1), 5000); }
+      carousel.querySelector('.offer-prev').addEventListener('click', () => { show(current - 1); restart(); });
+      carousel.querySelector('.offer-next').addEventListener('click', () => { show(current + 1); restart(); });
+      restart();
+    })();
+  </script>
 
   <!-- ===== SOBRE NOSOTROS ===== -->
   <section class="about section-pad" id="nosotros" aria-label="Sobre nosotros">
